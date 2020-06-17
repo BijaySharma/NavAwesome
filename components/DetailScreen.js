@@ -7,13 +7,17 @@ function Sepreator(){
     );
 }
 
-function DetailScreen({navigation}){
+function DetailScreen({route, navigation}){
 
-
+    
     return(
         <View style={{flex : 1, alignItems: 'center', justifyContent: 'center'}}>
             <Text style={{fontSize : 35, color: 'red'}}>Detail Screen</Text>
             <Sepreator />
+
+            <Text style={{fontSize: 20}}>Name : {route.params.name}</Text>
+             
+             <Sepreator />
 
             <Button
                 title="Go to details screen again"

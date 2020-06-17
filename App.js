@@ -27,7 +27,7 @@ class App extends Component {
             options={{title: 'Overview'}}
           />
           
-          <Stack.Screen name="Details" component={DetailScreen} />
+          <Stack.Screen name="Details" component={DetailScreen} initialParams={{name : 'Aman Prasad'}} />
         </Stack.Navigator>
       </NavigationContainer>
     );
