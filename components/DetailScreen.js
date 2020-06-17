@@ -1,11 +1,9 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
 
-function Sepreator(){
-    return (
-        <View style={{margin:10}}></View>
-    );
-}
+//custom Components
+import Sepreator from './SepreatorComponent';
+
 
 function DetailScreen({route, navigation}){
 

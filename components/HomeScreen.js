@@ -1,11 +1,8 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
 
-function Sepreator(){
-    return (
-        <View style={{margin:10}}></View>
-    );
-}
+//custom components :
+import Sepreator from './SepreatorComponent';
 
 function HomeScreen({navigation}){
 
@@ -22,6 +19,10 @@ function HomeScreen({navigation}){
             <Sepreator />
             
             <Button title="Details" onPress={()=> navigation.navigate("Details", data)} />
+
+            <Sepreator />
+        
+            <Button title="Profile" onPress={() => navigation.navigate("Profile", {...data})} />
         </View>
     );
 }
