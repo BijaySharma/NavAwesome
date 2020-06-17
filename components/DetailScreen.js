@@ -1,10 +1,38 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Button} from 'react-native';
 
-function DetailScreen(props){
+function Sepreator(){
+    return (
+        <View style={{margin:10}}></View>
+    );
+}
+
+function DetailScreen({navigation}){
+
+
     return(
         <View style={{flex : 1, alignItems: 'center', justifyContent: 'center'}}>
-            <Text>Detail Screen</Text>
+            <Text style={{fontSize : 35, color: 'red'}}>Detail Screen</Text>
+            <Sepreator />
+
+            <Button
+                title="Go to details screen again"
+                onPress={() => navigation.push("Details")}
+            />
+
+            <Sepreator />
+            
+            <Button
+                title="Go Back"
+                onPress={() => navigation.goBack()}
+            />
+
+            <Sepreator />
+
+            <Button
+                title="Go Back to first screen in stack"
+                onPress={() => navigation.popToTop()}
+            />
         </View>
     );
 }
