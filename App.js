@@ -35,7 +35,7 @@ class App extends Component {
           <Stack.Screen 
             name="Details" 
             component={DetailScreen} 
-            initialParams={{name : 'Aman Prasad'}} 
+            initialParams={{name : 'Aman Pd'}}
           />
 
           <Stack.Screen
